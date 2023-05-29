@@ -1,0 +1,243 @@
+
+/* ESTILOS DOJOWEATHER */
+
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+/*  Paleta de colores: 
+color principal: #7579E7
+color secundario: #9AB3F5
+detalles: #A3D8F4
+*/
+
+body {
+    background-color: #f3f3f3;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.barranavegacion {
+    background-color: #7579E7;
+    height: 75px;
+    border-top: 5px solid #A3D8F4;
+    color: #fff;
+}
+
+.nav-container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+h1 {
+    font-size: 45px;
+    margin-right: 80px;
+}
+
+.ciudad1 ,
+.ciudad2 ,
+.ciudad3 {
+    background-color: #7579E7;
+    color: #fff;
+    width: 20px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    list-style: none;
+}
+
+
+h2 {
+    font-size: 40px;
+}
+
+.secciontemp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 170px;
+    border-bottom: 3px solid black;
+}
+
+.temp {
+    width: 45px;
+    border-radius: 5px;
+}
+
+
+main {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Seccion de edición de contenedores */
+
+.contenedores {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 50px;
+}
+
+.contenedor1 {
+    display: flex;
+    flex: 1;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+.contenedor2 {
+    display: flex;
+    flex: 1;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+.contenedor3 {
+    display: flex;
+    flex: 1;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-right: 10px;
+    max-width: 250px;
+}
+
+.contenedor4 {
+    display: flex;
+    flex: 1;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+/* Sección de edición de img */
+
+.imgnube , 
+.imgsol ,
+.imglluvia {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.contenedor1 img,
+.contenedor2 img,
+.contenedor3 img,
+.contenedor4 img {
+    margin: auto; 
+    display: block; 
+    padding: 20px 0px;
+}
+
+/* titulos y otros elementos de los contenedores */
+
+.dia {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.clima {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.temperaturas {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+
+.tempmax ,
+.tempmin {
+    font-size: 1.2rem;
+    margin: 0 25px 20px 25px;
+    font-weight: bold;
+}
+
+.tempmax {
+    color:crimson;
+}
+
+.tempmin {
+    color:dodgerblue;
+}
+
+.tempmax::after,
+.tempmin::after {
+    content: '°';
+    display: inline;
+}
+
+
+/* Edición de contenedor de cookies */
+
+.contcookies {
+    display: flex;
+    border: 4px solid black;
+    position: fixed;
+    bottom: 2px;
+    border-radius: 5px;
+    background-color: #A3D8F4;
+    max-width: 1080px;
+}
+
+.cookies {
+    display:flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+}
+
+h3 {
+    white-space: nowrap;
+    margin: 20px 40px;
+}
+
+.descript {
+    margin: 15px 25px;
+    align-content: stretch;
+    flex-direction: row;
+}
+
+.btncookie {
+    background-color: #7579E7;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: auto;
+    width: 150px;
+    padding: 2px; 
+    margin: 50px 40px;
+}

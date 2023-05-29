@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="barranavegacion">
+            <div class="nav-container">
+                <h1>DojoWeather</h1>
+                <ul class="ciudades">
+                    <li class="ciudad1" onclick="changeCity(this)">Burbank</li>
+                    <li class="ciudad2" onclick="changeCity(this)">Chicago</li>
+                    <li class="ciudad3" onclick="changeCity(this)">Dallas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="secciontemp">
+            <h2>San José</h2>
+            <div class="derecho">
+                <label for="myselect" class="opt">Show temperature in</label>
+                <select id="myselect" class="temp" name="tempopt" onchange="changeMetric(this)">
+                    <option value="celcius">C°</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedores">
+        <div class="contenedor1">
+            <div class="dia">Today</div>
+            <img src="./assets/some_rain.png" alt="some-rain" class="imglluvia">
+            <span class="clima">some rain</span>
+            <div class="temperaturas">
+                <div class="tempmax">24</div>
+                <div class="tempmin">18</div>
+            </div>
+        </div>
+
+
+        <div class="contenedor2">
+            <div class="dia">Tomorrow</div>
+            <img src="./assets/some_sun.png" alt="some-sun" class="imgsol">
+            <span class="clima">some sun</span>
+            <div class="temperaturas">
+                <div class="tempmax">27</div>
+                <div class="tempmin">19</div>
+            </div>
+        </div>
+
+        <div class="contenedor3">
+            <div class="dia">Friday</div>
+            <img src="./assets/some_clouds.png" alt="some-clouds" class="imgnube">
+            <span class="clima">some clouds</span>
+            <div class="temperaturas">
+                <div class="tempmax">21</div>
+                <div class="tempmin">16</div>
+            </div>
+        </div>
+
+        <div class="contenedor4">
+            <div class="dia">Saturday</div>
+            <img src="./assets/some_sun.png" alt="some-sun" class="imgsol">
+            <span class="clima">some sun</span>
+            <div class="temperaturas">
+                <div class="tempmax">26</div>
+                <div class="tempmin">21</div>
+            </div>
+        </div>
+
+        <div class="contcookies">
+            <img src="./assets/cookie.png" alt="cookie" class="cookies">
+            <div class="columnaizq">
+                <h3>Stop! Cookie time</h3>
+                <div class="descript"> We use cookies (sadly no the edible ones) to personalize
+                    content and ads, to provide social media features and to analyse our traffic.
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="columnadd"></div>
+            <button class="btncookie" onclick="acceptCookie(this)">I Accept</button>
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
