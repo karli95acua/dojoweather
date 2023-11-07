@@ -1,4 +1,3 @@
-
 /* ESTILOS DOJOWEATHER */
 
 * {
@@ -33,25 +32,33 @@ body {
     height: inherit;
 }
 
-h1 {
-    font-size: 45px;
-    margin-right: 80px;
+.ciudades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.ciudad1 ,
-.ciudad2 ,
-.ciudad3 {
+.ciudad1, .ciudad2, .ciudad3 {
     background-color: #7579E7;
     color: #fff;
-    width: 20px;
+    min-width: 100px;
     height: 40px;
     font-size: 1.2rem;
     cursor: pointer;
     white-space: nowrap;
     border: none;
     list-style: none;
+    margin: 1px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+h1 {
+    font-size: 45px;
+    margin-right: 80px;
+}
 
 h2 {
     font-size: 40px;
@@ -71,7 +78,6 @@ h2 {
     border-radius: 5px;
 }
 
-
 main {
     display: flex; 
     justify-content: center;
@@ -88,7 +94,7 @@ main {
     margin: 20px 50px;
 }
 
-.contenedor1 {
+.contenedor1, .contenedor2, .contenedor3, .contenedor4 {
     display: flex;
     flex: 1;
     border: 1px solid grey;
@@ -96,55 +102,18 @@ main {
     border-radius: 10px;
     flex-direction: column;
     margin-right: 10px;
-    max-width: 250px;
-}
-
-.contenedor2 {
-    display: flex;
-    flex: 1;
-    border: 1px solid grey;
-    box-shadow: 2px 2px grey;
-    border-radius: 10px;
-    flex-direction: column;
-    margin-right: 10px;
-    max-width: 250px;
-}
-
-.contenedor3 {
-    display: flex;
-    flex: 1;
-    border: 1px solid grey;
-    box-shadow: 2px 2px grey;
-    border-radius: 10px;
-    flex-direction: column;
-    margin-right: 10px;
-    max-width: 250px;
-}
-
-.contenedor4 {
-    display: flex;
-    flex: 1;
-    border: 1px solid grey;
-    box-shadow: 2px 2px grey;
-    border-radius: 10px;
-    flex-direction: column;
     max-width: 250px;
 }
 
 /* Sección de edición de img */
 
-.imgnube , 
-.imgsol ,
-.imglluvia {
+.imgnube, .imgsol, .imglluvia {
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
 
-.contenedor1 img,
-.contenedor2 img,
-.contenedor3 img,
-.contenedor4 img {
+.contenedor1 img, .contenedor2 img, .contenedor3 img, .contenedor4 img {
     margin: auto; 
     display: block; 
     padding: 20px 0px;
@@ -176,8 +145,7 @@ main {
     
 }
 
-.tempmax ,
-.tempmin {
+.tempmax, .tempmin {
     font-size: 1.2rem;
     margin: 0 25px 20px 25px;
     font-weight: bold;
@@ -191,12 +159,10 @@ main {
     color:dodgerblue;
 }
 
-.tempmax::after,
-.tempmin::after {
+.tempmax::after, .tempmin::after {
     content: '°';
     display: inline;
 }
-
 
 /* Edición de contenedor de cookies */
 
